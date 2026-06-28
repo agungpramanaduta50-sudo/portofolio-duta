@@ -4,154 +4,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | Duta Agung Pramana</title>
+    <title>Duta Agung Pramana | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Phosphor Icons for modern minimalist icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
 
-    <!-- Dynamic Background Elements -->
-    <div class="bg-gradient"></div>
-    <div class="bg-gradient-2"></div>
-
     <!-- Navigation -->
-    <nav>
+    <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Duta Agung Pramana<span>.</span></a>
-            <div class="nav-links">
-                <a href="#about">Tentang</a>
-                <a href="#skills">Keahlian</a>
-                <a href="#projects">Proyek</a>
-                <a href="#contact">Kontak</a>
+            <a href="#home" class="logo">DAP<span>.</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Beranda</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#skills" class="nav-link">Keahlian</a></li>
+                <li><a href="#projects" class="nav-link">Proyek</a></li>
+                <li><a href="#seminars" class="nav-link">Seminar</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="home">
-        <div class="profile-wrapper">
-            <div class="profile-glow"></div>
-            <div class="profile-img-container">
-                <img src="Duta.jpeg" alt="Duta Agung Pramana" class="profile-img">
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Halo, Saya</p>
+                <h1 class="hero-name">Duta Agung Pramana</h1>
+                <div class="hero-typed">
+                    <span class="typed-text"></span>
+                    <span class="cursor">&nbsp;</span>
+                </div>
+                <p class="hero-description">Mahasiswa Teknik Informatika di Universitas Pamulang yang fokus pada pengembangan aplikasi mobile dan sistem pendukung keputusan.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+                    <a href="#projects" class="btn btn-outline">Lihat Proyek</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/agungpramanaduta50-sudo" target="_blank" class="social-icon">
+                        <i class="ph-fill ph-github-logo"></i>
+                    </a>
+                    <a href="https://www.instagram.com/duta_agng/" target="_blank" class="social-icon">
+                        <i class="ph-fill ph-instagram-logo"></i>
+                    </a>
+                    <a href="mailto:agungpramanaduta50@gmail.com" class="social-icon">
+                        <i class="ph-fill ph-envelope-simple"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="Duta.jpeg" alt="Duta Agung Pramana">
+                    <div class="image-glow"></div>
+                </div>
             </div>
         </div>
-        <h1>Duta Agung Pramana</h1>
-        <p class="subtitle">Mahasiswa Teknik Informatika</p>
-        <p class="university">Universitas Pamulang</p>
-        <a href="#about" class="btn">Lihat Portofolio</a>
-    </header>
+        <div class="scroll-down">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
 
-    <div class="container">
-
-        <!-- About Section -->
-        <div class="section" id="about">
-            <h2 class="section-title">Tentang Saya</h2>
-            <div class="glass-card">
-                <p class="about-text">Halo! Saya Duta Agung Pramana, seorang mahasiswa Teknik Informatika di Universitas
-                    Pamulang yang
-                    memiliki minat besar dalam pengembangan aplikasi mobile dan sistem basis data. Saya senang
-                    mempelajari teknologi baru dan menerapkannya dalam solusi kreatif yang berdampak positif. Saya
-                    selalu antusias untuk menghadapi tantangan baru dalam dunia pemrograman.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>Saya adalah mahasiswa Teknik Informatika di Universitas Pamulang dengan passion dalam pengembangan aplikasi mobile dan web. Saya memiliki pengalaman dalam membangun aplikasi Android menggunakan Java dan Kotlin, serta mengembangkan sistem berbasis web.</p>
+                    <p>Saya selalu antusias untuk belajar teknologi baru dan mengaplikasikannya dalam proyek-proyek yang dapat memberikan solusi nyata untuk permasalahan sehari-hari.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Nama:</span>
+                            <span class="info-value">Duta Agung Pramana</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Universitas:</span>
+                            <span class="info-value">Universitas Pamulang</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Jurusan:</span>
+                            <span class="info-value">Teknik Informatika</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">agungpramanaduta50@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Skills Section -->
-        <div class="section" id="skills">
-            <h2 class="section-title">Keahlian Utama</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Keahlian Saya</h2>
             <div class="skills-grid">
-                <div class="skill-item">
-                    <i class="ph ph-android-logo skill-icon"></i>
-                    <div class="skill-name">Java (Android)</div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="ph-fill ph-android-logo"></i>
+                    </div>
+                    <h3>Pengembangan Mobile</h3>
+                    <p>Android development dengan Java & Kotlin, Firebase integration, dan Material Design.</p>
+                    <div class="skill-tech">
+                        <span>Java</span>
+                        <span>Kotlin</span>
+                        <span>Android Studio</span>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <i class="ph ph-file-code skill-icon"></i>
-                    <div class="skill-name">HTML / CSS</div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="ph-fill ph-code"></i>
+                    </div>
+                    <h3>Pengembangan Web</h3>
+                    <p>Membangun website responsif dengan HTML, CSS, dan JavaScript modern.</p>
+                    <div class="skill-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <i class="ph ph-database skill-icon"></i>
-                    <div class="skill-name">MySQL</div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="ph-fill ph-database"></i>
+                    </div>
+                    <h3>Manajemen Database</h3>
+                    <p>Desain dan manajemen database menggunakan MySQL dan Firebase Realtime Database.</p>
+                    <div class="skill-tech">
+                        <span>MySQL</span>
+                        <span>Firebase</span>
+                        <span>SQLite</span>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <i class="ph ph-tree-structure skill-icon"></i>
-                    <div class="skill-name">UML Design</div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="ph-fill ph-tree-structure"></i>
+                    </div>
+                    <h3>Desain Sistem</h3>
+                    <p>Pemodelan sistem menggunakan UML dan desain arsitektur aplikasi.</p>
+                    <div class="skill-tech">
+                        <span>UML</span>
+                        <span>Analisis Sistem</span>
+                        <span>Design Patterns</span>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Projects Section (New) -->
-        <div class="section" id="projects">
-            <h2 class="section-title">Proyek Terbaru</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Proyek Saya</h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="MP.jpeg" alt="Aplikasi Manajemen Warung" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Aplikasi Manajemen Warung</h3>
-                        <p class="project-desc">Aplikasi kasir dan manajemen stok untuk warung menggunakan Android
-                            Studio dan Firebase Database.</p>
-                        <div class="project-tags">
-                            <span class="tag">Android Java</span>
-                            <span class="tag">Firebase</span>
+                <a href="https://drive.google.com/file/d/1OR0Ms0D37MCpR9WQ8uLpvL6e004jgxlI/view" target="_blank" class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="MP.jpeg" alt="Aplikasi Manajemen Warung">
+                        <div class="project-overlay">
+                            <i class="ph-fill ph-arrow-up-right"></i>
                         </div>
                     </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="SPK.png" alt="Sistem Pendukung Keputusan (SPK)" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Sistem Pendukung Keputusan (SPK)</h3>
-                        <p class="project-desc">Website SPK Multi-Method (AHP, SAW, dll) yang di-hosting menggunakan
-                            GitHub Pages.</p>
+                    <div class="project-info">
+                        <h3>Aplikasi Manajemen Warung</h3>
+                        <p>Aplikasi kasir dan manajemen stok untuk warung menggunakan Android Studio dan Firebase Database untuk real-time data sync.</p>
                         <div class="project-tags">
-                            <span class="tag">Web Dev</span>
-                            <span class="tag">Algoritma</span>
+                            <span>Android</span>
+                            <span>Java</span>
+                            <span>Firebase</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="section" id="contact">
-            <h2 class="section-title">Mari Terhubung</h2>
-            <div class="contact-grid">
-                <a href="https://www.instagram.com/duta_agng/" target="_blank" class="contact-item">
-                    <div class="contact-icon">
-                        <i class="ph ph-instagram-logo"></i>
+                </a>
+                <a href="https://agungpramanaduta50-sudo.github.io/spk-mobil-bekas-duta/" target="_blank" class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="SPK.png" alt="Sistem Pendukung Keputusan">
+                        <div class="project-overlay">
+                            <i class="ph-fill ph-arrow-up-right"></i>
+                        </div>
                     </div>
-                    <div class="contact-info">
-                        <strong>Instagram</strong>
-                        <span>@duta_agng</span>
+                    <div class="project-info">
+                        <h3>Sistem Pendukung Keputusan</h3>
+                        <p>Website SPK Multi-Method (SAW, WP, SMART, AHP, TOPSIS, MOORA, Profile Matching) untuk analisis dan rekomendasi keputusan.</p>
+                        <div class="project-tags">
+                            <span>Web Dev</span>
+                            <span>Algorithm</span>
+                            <span>JavaScript</span>
+                        </div>
                     </div>
                 </a>
-                <a href="https://github.com/agungpramanaduta50-sudo" target="_blank" class="contact-item">
-                    <div class="contact-icon">
-                        <i class="ph ph-github-logo"></i>
+                <a href="https://drive.google.com/file/d/1JGDx2GFsUItpj5fnOKB17t3RToqG5HRS/view" target="_blank" class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="thumbnail.png" alt="Aplikasi Pertolongan Pertama">
+                        <div class="project-overlay">
+                            <i class="ph-fill ph-arrow-up-right"></i>
+                        </div>
                     </div>
-                    <div class="contact-info">
-                        <strong>GitHub</strong>
-                        <span>agungpramanaduta50-sudo</span>
-                    </div>
-                </a>
-                <a href="mailto:agungpramanaduta50@gmail.com" class="contact-item">
-                    <div class="contact-icon">
-                        <i class="ph ph-envelope-simple"></i>
-                    </div>
-                    <div class="contact-info">
-                        <strong>Email</strong>
-                        <span>agungpramanaduta50@gmail.com</span>
+                    <div class="project-info">
+                        <h3>Aplikasi Pertolongan Pertama</h3>
+                        <p>Aplikasi mobile untuk panduan pertolongan pertama pada kecelakaan dan situasi darurat dengan UI yang user-friendly.</p>
+                        <div class="project-tags">
+                            <span>Android</span>
+                            <span>Mobile App</span>
+                            <span>Healthcare</span>
+                        </div>
                     </div>
                 </a>
             </div>
         </div>
+    </section>
 
-        <footer>
-            <p>&copy; 2026 Duta Agung Pramana. Didesain dengan <i class="ph-fill ph-heart"
-                    style="color: var(--primary);"></i></p>
-        </footer>
-    </div>
+    <!-- Seminars Section -->
+    <section id="seminars" class="seminars">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Seminar & Sertifikasi</h2>
+            <div class="seminars-grid">
+                <div class="seminar-card" data-aos="fade-up" data-aos-delay="100" data-certificate-file="Seminar 1.pdf" data-download-name="Empowering_21st_Century_Digital_Talents.pdf">
+                    <div class="seminar-icon">
+                        <i class="ph-fill ph-certificate"></i>
+                    </div>
+                    <div class="seminar-content">
+                        <h3>Empowering 21st Century Digital Talents</h3>
+                        <p class="seminar-organizer">Universitas Pamulang</p>
+                        <p class="seminar-description">Seminar nasional tentang disiplin profesional untuk AI etis, kecerdasan buatan, dan pemikiran kritis dalam informatika.</p>
+                        <span class="seminar-date">11 Juni 2026</span>
+                    </div>
+                </div>
+                <div class="seminar-card" data-aos="fade-up" data-aos-delay="150" data-certificate-file="Seminar 2.pdf" data-download-name="Beyond_Technical_Skills_Leadership_Creativity.pdf">
+                    <div class="seminar-icon">
+                        <i class="ph-fill ph-certificate"></i>
+                    </div>
+                    <div class="seminar-content">
+                        <h3>Beyond Technical Skills</h3>
+                        <p class="seminar-organizer">Universitas Pamulang</p>
+                        <p class="seminar-description">Seminar tentang kepemimpinan, kreativitas, dan personal branding digital di era kecerdasan buatan.</p>
+                        <span class="seminar-date">18 Desember 2025</span>
+                    </div>
+                </div>
+                <div class="seminar-card" data-aos="fade-up" data-aos-delay="200" data-certificate-file="Seminar 3.pdf" data-download-name="Masa_Depan_Web_Development.pdf">
+                    <div class="seminar-icon">
+                        <i class="ph-fill ph-certificate"></i>
+                    </div>
+                    <div class="seminar-content">
+                        <h3>Masa Depan Web Development</h3>
+                        <p class="seminar-organizer">Universitas Pamulang</p>
+                        <p class="seminar-description">Seminar tentang membangun generasi programmer yang andal, kreatif, dan berdaya saing dalam web development.</p>
+                        <span class="seminar-date">5 Juni 2025</span>
+                    </div>
+                </div>
+                <div class="seminar-card" data-aos="fade-up" data-aos-delay="250" data-certificate-file="Seminar 4.pdf" data-download-name="AI_Smart_Solution_Indonesia_Future.pdf">
+                    <div class="seminar-icon">
+                        <i class="ph-fill ph-certificate"></i>
+                    </div>
+                    <div class="seminar-content">
+                        <h3>Artificial Intelligence as Smart Solution</h3>
+                        <p class="seminar-organizer">Universitas Pamulang</p>
+                        <p class="seminar-description">Seminar tentang kecerdasan buatan sebagai solusi cerdas untuk masa depan Indonesia.</p>
+                        <span class="seminar-date">5 Desember 2024</span>
+                    </div>
+                </div>
+                <div class="seminar-card" data-aos="fade-up" data-aos-delay="300" data-certificate-file="Seminar 5.pdf" data-download-name="Digital_Entrepreneurship_Innovation.pdf">
+                    <div class="seminar-icon">
+                        <i class="ph-fill ph-certificate"></i>
+                    </div>
+                    <div class="seminar-content">
+                        <h3>Digital Entrepreneurship Innovation</h3>
+                        <p class="seminar-organizer">Universitas Pamulang</p>
+                        <p class="seminar-description">Seminar tentang kreativitas tanpa batas sebagai strategi ampuh nge-hitz di era digital dalam kewirausahaan.</p>
+                        <span class="seminar-date">2024</span>
+                    </div>
+                </div>
+                <div class="seminar-card" data-aos="fade-up" data-aos-delay="350" data-certificate-file="Seminar 6.pdf" data-download-name="AI_in_System_Engineering_Industry_5.0.pdf">
+                    <div class="seminar-icon">
+                        <i class="ph-fill ph-certificate"></i>
+                    </div>
+                    <div class="seminar-content">
+                        <h3>AI in System Engineering & Industry 5.0</h3>
+                        <p class="seminar-organizer">Universitas Pamulang</p>
+                        <p class="seminar-description">Seminar tentang implementasi kecerdasan buatan dalam sistem engineering dan teknologi di revolusi industri 5.0.</p>
+                        <span class="seminar-date">19 Oktober 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Hubungi Saya</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info-container" data-aos="fade-right" data-aos-delay="100">
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">Hubungi Saya</h3>
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i class="ph-fill ph-envelope-simple"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h4>Email</h4>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=agungpramanaduta50@gmail.com" target="_blank" style="color: var(--text-secondary); text-decoration: none;">
+                                        <p>agungpramanaduta50@gmail.com</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i class="ph-fill ph-phone"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h4>Telepon / WhatsApp</h4>
+                                    <a href="https://wa.me/6289648021163" target="_blank" style="color: var(--text-secondary); text-decoration: none;">
+                                        <p>0896-4802-1163</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i class="ph-fill ph-map-pin"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h4>Lokasi</h4>
+                                    <p>Ciseeng, Parung, Bogor, Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-media-links">
+                            <a href="https://github.com/agungpramanaduta50-sudo" target="_blank" class="social-media-icon">
+                                <i class="ph-fill ph-github-logo"></i>
+                            </a>
+                            <a href="https://www.instagram.com/duta_agng/" target="_blank" class="social-media-icon">
+                                <i class="ph-fill ph-instagram-logo"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container" data-aos="fade-left" data-aos-delay="100">
+                    <h3 class="form-title">Kirim Pesan</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            Kirim Pesan
+                            <i class="ph-fill ph-paper-plane-tilt"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Duta Agung Pramana. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
